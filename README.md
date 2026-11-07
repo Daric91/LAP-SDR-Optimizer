@@ -27,7 +27,7 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 *(This raw terminal screenshot proves the A/B test was conducted on a 50M model with 103B tokens on a single RTX 5080. Notice the dynamic weights routing to difficult batches.)*
 ![Raw Training Log](assets/ab_test_50M_console.png)
 
-### 📉 Micro Level: 80/20 Imbalance Test
+### Micro Level: 80/20 Imbalance Test
 *(Under extreme data imbalance, LAP-SDR demonstrates significantly faster adaptation speed on hard data.)*
 ![80/20 Hard Loss Comparison](assets/split_loss_comparison.png)
 
