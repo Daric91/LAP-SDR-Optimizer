@@ -20,14 +20,19 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 * **Macro Level**: Achieves an **89.4% win rate** over the AdamW baseline in a 50M parameter model A/B test.
 * **Micro Level (Extreme Imbalance)**: Under an 80/20 (Easy/Hard) data distribution, LAP-SDR demonstrates significantly **faster adaptation speed** on complex data, achieving a lower hard-loss than AdamW.
 
-### Advantage Chart
+### A/B 50M Model Test
 ![LAP-SDR Advantage](assets/ab_test_50m_graph.png)
 
 ### Raw Training Log Evidence
 *(This raw terminal screenshot proves the A/B test was conducted on a 50M model with 103B tokens on a single RTX 5080. Notice the dynamic weights routing to difficult batches.)*
 ![Raw Training Log](assets/ab_test_50m_console.png)
 
+### 📉 Micro Level: 80/20 Imbalance Test
+*(Under extreme data imbalance, LAP-SDR demonstrates significantly faster adaptation speed on hard data.)*
+![80/20 Hard Loss Comparison](assets/split_loss_comparison.png)
+
 ## Author
 **Zhang Yuan (Digilidaahz)** 
 *Independent AI Researcher*
+*Right now grade 8 student in Tsinglan school*
 *Developed from scratch on a single RTX 5080 (16GB).*
