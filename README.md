@@ -34,10 +34,10 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 ### ARC Benchmark Console Logs
 *(Raw terminal output for the ARC-Challenge evaluation comparing the AdamW baseline and LAP-SDR.)*
 
-**LAP-SDR:**
+**AdamW Baseline:**
 ![ARC Test AdamW Baseline](assets/arc_test_AdamW-baseline_console.png)
 
-**AdamW Baseline:**
+**LAP-SDR:**
 ![ARC Test LAP-SDR](assets/arc_test_LAP-SDR_console.png)
 
 ## Author
