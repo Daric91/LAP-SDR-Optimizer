@@ -13,7 +13,7 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 
 ## Core Mechanisms
 1. **Look-Ahead Probe**: Uses a no-gradient forward pass to estimate the difficulty (loss) of each micro-batch in real-time.
-2. **Softmax Routing**: Dynamically assigns higher gradient weights to hard data and lower weights to easy data (e.g., $w_{\max}=1.5, w_{\min}=0.6$).
+2. **Softmax Routing**: Dynamically assigns higher gradient weights to hard data and lower weights to easy data (e.g., $w_{\max}=1.5$, $w_{\min}=0.6$).
 3. **Zero-Sum Renormalization**: Strictly preserves the global learning rate schedule by keeping the sum of weights equal to the accumulation steps.
 
 ## Empirical Results
@@ -30,6 +30,15 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 ### Micro Level: 80/20 Imbalance Test
 *(Under extreme data imbalance, LAP-SDR demonstrates significantly faster adaptation speed on hard data.)*
 ![80/20 Hard Loss Comparison](assets/split_loss_comparison.png)
+
+### ARC Benchmark Console Logs
+*(Raw terminal output for the ARC-Challenge evaluation comparing the AdamW baseline and LAP-SDR.)*
+
+**AdamW Baseline:**
+![ARC Test AdamW Baseline](assets/arc_test_AdamW-baseline_console.png)
+
+**LAP-SDR:**
+![ARC Test LAP-SDR](assets/arc_test_LAP-SDR_console.png)
 
 ## Author
 **Zhang Yuan (Digilidaahz)** 
