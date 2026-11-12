@@ -7,7 +7,7 @@ Training Large Language Models (LLMs) on heterogeneous datasets (e.g., mixing na
 
 **LAP-SDR (Look-Ahead Probe with Softmax Dynamic Routing)** solves this by dynamically reallocating compute to the hardest samples without breaking the global learning rate.
 
-## 📦 Installation
+## Installation
 
 Install the package directly from GitHub (latest V2.0.0 with Zero-Sum Routing):
 
